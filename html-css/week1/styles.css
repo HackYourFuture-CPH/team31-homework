@@ -264,7 +264,8 @@
       color: #307cc7;
     }
     .othercontacts h2 {
-      margin-bottom: 10%;
+      text-align: center;
+      margin-bottom: 10px;
       font-family: var(--font-all);
       font-size: var(--font-size-p)-2;
     }
@@ -282,4 +283,3 @@
       width: 1500px;
       background: linear-gradient(hsl(240, 56%, 42%),hsl(186, 76%, 16%), hsl(223, 90%, 60%) );
     }
-   
