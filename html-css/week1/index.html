@@ -43,20 +43,15 @@
                 <div>
                     <p>Click on the picture to see my work further</p>
                 </div>
-                <div id="row2">
-                    <div>
-                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
-                        <img src="survey form.jpg" alt="Survey Form Picture"></a>
-                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-67">
-                        <img src="quizz.jpg" alt="Quizz Page Picture"></a>
-                    </div>
-                        
-                    <div id="col">
-                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104">
-                        <img src="penguin.jpg" alt="Penguin Animation Page Picture"></a>
-                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91">
-                        <img src="cafemenu.jpg" alt="Cafe Menu Page Picture"></a>
-                    </div>
+                <div class="row2">                    
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
+                    <img src="survey form.jpg" alt="Survey Form Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-67">
+                    <img src="quizz.jpg" alt="Quizz Page Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104">
+                    <img src="penguin.jpg" alt="Penguin Animation Page Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91">
+                    <img src="cafemenu.jpg" alt="Cafe Menu Page Picture"></a>
                 </div>    
             </div>
         </section>
@@ -69,29 +64,37 @@
                 </div>
                 <div class="contactcontainer">
                     <div class="formlayout">
-                        <form method="post">
-                            <label for="name">Name<br>
-                                <input id="name" name="name" type="text" placeholder="Your Full Name Please" required />
-                            </label>
-                            <label for="email">Email <br>
-                                <input id="email" name="email" type="email" placeholder="abcabc@xyz.com" required />
-                            </label>
-                            <label for="age">Age (optional):<br>
-                                <input id="number" type="number" name="age" min="13" max="120"
-                                    placeholder="Select from the given" optional />
-                            </label>
-                        </form>
-                        <div class="reccom">
-                            <label> Would you please recommend this page to a others. . .</label><br>
-                            <label for="yes">
-                                <input id="yes" type="radio" name="recommendation" value="yes" /> Yes</label>
-                            <label for="no"><input id="no" type="radio" name="recommendation" value="no" /> No</label>
-                            <label for="maybe"> <input id="maybe" type="radio" name="recommendation" value="maybe" /> May
-                                be</label>
-                            <input id="submit" type="submit" value="SEND" />
-                        </div>
+                            <form method="post">
+                                <div class="normalcontacs">
+                                    <p>Contact
+                                    <Form></Form>
+                                    </p>
+                                    <label for="name">Name<br>
+                                        <input id="name" name="name" type="text" placeholder="Your Full Name Please" required />
+                                    </label><br>
+                                    <label for="email">Email<br>
+                                        <input id="email" name="email" type="email" placeholder="abcabc@xyz.com" required />
+                                    </label><br>
+                                    <label for="age">Age (optional)
+                                        <input id="number" type="number" name="age" min="13" max="120" placeholder="Select from the given"
+                                            optional />
+                                    </label>
+                                </div>
+                            </form>
+                       
+                            <div class="reccom">
+                                <label> Would you please recommend this page to a others. . .</label><br>
+                                <label for="yes"><input id="yes" type="radio" name="recommendation" value="yes" /> Yes</label>
+                                <label for="no"><input id="no" type="radio" name="recommendation" value="no" /> No</label>
+                                <label for="maybe"> <input id="maybe" type="radio" name="recommendation" value="maybe" /> May
+                                    be</label>
+                                <input id="submit" type="submit" value="SEND" />
+                            </div>
                         <div class="othercontacts">
-                            <p>You can reach me directly at wasimhussain3@gmail.com, or connect with me through the profiles listed below.</p>
+                            <div>
+                                <p>Contact me via E-Mail: </p>
+                                <p>wasimhussain3@gmail.com</p>
+                            </div>
                             <div>
                                 <a href="https://www.facebook.com/itsWasimBukhari">
                                 <img src="fv.png" alt="Click for facebook profile">
@@ -116,7 +119,7 @@
         
         <footer>
             <p>This is an Assignment Project for submission to HACK YOUR FUTURE class 31.</p>
-            <p>NoCopyrigthsWASIM</p>
+            <p class="copy">NoCopyrigthsWASIM</p>
         </footer>
     </body>
 </html>
