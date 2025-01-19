@@ -58,14 +58,11 @@ header p {
     padding-bottom: 20px;
 }
 
-#welcome-selection {
-    width: 100%;
-}
-
 .welcome-section {
+    width: 86%;
     display: flex;
     flex-direction: column;
-    padding: 2% 3% 2% 3%;
+    padding: 20px 7%;
 }
 
 .intro {
@@ -86,17 +83,12 @@ header p {
 
 .image {
     width: 100%;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 0 0 20px 20px;
+    object-fit: cover;
 }
 
-#projects {
-    padding: 2% 3% 2% 3%;
+.row2 {
+    padding: 20px 5% 20px 5%;
 }
 
 .projects {
@@ -118,15 +110,11 @@ header p {
     padding-top: 10px;
 }
 
-#contact {
-    padding: 2% 3% 2% 3%;
-}
-
 .contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    
+    width: 86%;
+    padding: 20px 7% 20px 7%;
 }
 
 .text {
@@ -140,10 +128,12 @@ header p {
 
 .contact .text h2 {
     color: black;
+    font-weight: bold;
+    font-size: 18px;
 }
 .contact .text p {
     color: black;
-    line-height: 25px;    
+    line-height: 15px;    
 }
 
 
@@ -153,11 +143,12 @@ header p {
     align-items: center;
     width: 100%;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-}
+.formlayout p {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+} 
 
 .formlayout {
     display: flex;
@@ -189,19 +180,25 @@ input[type="submit"] {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    padding-bottom: 30px;
 }
 
 .othercontacts p {
-    text-align: justify;
+    text-align: left;
     color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .othercontacts img {
-    height: 30px;
+    height: 20px;
     padding: 10px;
     margin: auto;
     padding-top: 5px;
+}
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 footer {
@@ -213,88 +210,72 @@ footer {
 }
 
 @media (min-width: 765px) {
-
     .welcome-section {
         flex-direction: row;
+        max-height: 450px;
     }
+
     .intro {
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 0 0 20px;
     }
-    .image img {
-        border-radius: 20px 20px 20px 20px;
+
+    .image {
+        border-radius: 0 20px 20px 0;
     }
-    #row2 {
+
+    #projects {
+        width: 100%;
         display: flex;
+    }
+
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;  
+        padding: 20px 7% 0 7%;
+    }
+
+    .row2 a {
+        width: 49%;
+    }
+    
+    .contact {
+        padding-top: 75px;
+    }
+    .contactcontainer {
+        width: 100%;
+    }
+
+    .formlayout {
+        justify-content: space-between;
         flex-direction: row;
         width: 100%;
-        gap: 10px;
     }
-        .contactcontainer {
-            flex-direction: row;
-        }
+
+    .normalcontacts {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+
+    .othercontacts {
+        max-width: 33%;
+        padding: 0;
+    }   
+
+    .othercontacts p {
+        word-break: break-all;
+        line-height: 15px;
+    }
+
+    .reccom {
+        width: 33%;
+        padding-top: 20px;
+    }
+
+    .copy {
+        margin-top: -5px;
+    }
+    
 }
-
-
-
-
-
-
-/*
-.projectstop {
-    display: flex;
-    height: 481px;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: 10px 10px 0px 10px;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.projectstop1 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectstop2 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectsbottom {
-    display: flex;
-    height: 481px;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: 0px 10px 10px 10px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.projectsbottom1 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectsbottom2 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-*/
