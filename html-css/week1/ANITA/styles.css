@@ -1,0 +1,59 @@
+/*styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #blue;
+    margin: 0;
+}
+
+.visa-card{
+    width: 400px;
+    height: 250px;
+    background-color: #blue;
+    border-radius: 20px;
+    color: #000;
+    font-family: "Arial", Sans-serif;
+    box-shadow: 0 4px 10px rgba(0 0 0 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.visa-logo {
+    width: 50px;
+}
+
+.card-number {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 60px; 20px 20px 20px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 20px
+}
+
+.card-holder {
+    font-family: 14px;
+    letter-spacing: 2px;
+}
+
+.expiration-date {
+    font-size: 14px;
+
+}
+
+.card-number span, .card-holder span, .expiration-date span {
+    font-family: "Courier New", Couier, monospace;
+}

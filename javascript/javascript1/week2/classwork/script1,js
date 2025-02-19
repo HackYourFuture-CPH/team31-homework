@@ -1,0 +1,13 @@
+function calculator(){
+
+    const a = 5
+    const b =10
+
+    sum =a+b;
+
+    console.log(sum);
+}
+calculator();
+calculator();
+calculator();
+calculator();
