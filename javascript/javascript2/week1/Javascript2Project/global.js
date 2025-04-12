@@ -12,8 +12,7 @@ const cardStorageArray = [];
 const randomCardsArray = [];
 const backSrc = "./cards/cardBack.webp";
 
-// Added this as Valentin suggested.
-// Used template literals as Yasen suggested
+// Creating HTML Content on DOM Load
 document.addEventListener("DOMContentLoaded", () => {
   document.body.innerHTML = `
     <section id="cards" class="cards">

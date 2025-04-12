@@ -1,4 +1,4 @@
-// Starting the Game by requesting user to input the amount of card pairs they want
+// Starting the Game by requesting user to input the difficulty they want
 function startGame(pairs) {
   if (!gameSize) {
     gameSize = Number(pairs);
