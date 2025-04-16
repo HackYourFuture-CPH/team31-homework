@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="order.css" />
+  <title>PAYMENT <span>FORM</span></title>
+</head>
+
+<body>
+  <header>
+    <h1>Order Payment</h1>
+    <h4>Please choose below</h4>
+  </header>
+  <!-- container -->
+  <main class="container">
+    <!-- Ordinary summary -->
+    <section>
+      <div class="ordinary-summary">Order Summary</div>
+      <div class="total1">
+        <span>Total</span>
+        <span>$333 / month</span>
+      </div>
+      <hr>
+      <div class="total2">
+        <span>Total</span>
+        <span>$100</span>
+      </div>
+    </section>
+    <!-- Payment method Card Info form -->
+    <form>
+      <!-- payment method -->
+      <div class="payment-method">
+        <h2>Payment Method</h2>
+        <div class="payment-method-sub">
+          <span class="payment-method-sub-item1">
+            <img src="img/cards.png" alt="" class="credit-picture">
+            <p>Credit / Debit</p>
+          </span>
+          <span class="payment-method-sub-item2">
+            <img src="img/paypal.png" alt="" class="paypal-picture">
+            <p>Paypal</p>
+          </span>
+
+        </div>
+      </div>
+
+      <!-- card info part -->
+      <div class="card-info">
+        <h2>Card Info</h2>
+        <div class="card-info-sub">
+          <div class="card-info-sub-item card-info-sub-item1">
+            <label for="card-number">Card number</label><br />
+            <div class="input-container">
+            <input type="text" id="" placeholder="1234 1234 1234 1234" name="card-number" required />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                fill="#5D616A" />
+              <path
+                d="M13.0986 14.6777H10.8574C10.8516 14.3555 10.8486 14.1592 10.8486 14.0889C10.8486 13.3623 10.9688 12.7646 11.209 12.2959C11.4492 11.8271 11.9297 11.2998 12.6504 10.7139C13.3711 10.1279 13.8018 9.74414 13.9424 9.5625C14.1592 9.27539 14.2676 8.95898 14.2676 8.61328C14.2676 8.13281 14.0742 7.72266 13.6875 7.38281C13.3066 7.03711 12.791 6.86426 12.1406 6.86426C11.5137 6.86426 10.9893 7.04297 10.5674 7.40039C10.1455 7.75781 9.85547 8.30273 9.69727 9.03516L7.42969 8.75391C7.49414 7.70508 7.93945 6.81445 8.76562 6.08203C9.59766 5.34961 10.6875 4.9834 12.0352 4.9834C13.4531 4.9834 14.5811 5.35547 15.4189 6.09961C16.2568 6.83789 16.6758 7.69922 16.6758 8.68359C16.6758 9.22852 16.5205 9.74414 16.21 10.2305C15.9053 10.7168 15.249 11.3789 14.2412 12.2168C13.7197 12.6504 13.3945 12.999 13.2656 13.2627C13.1426 13.5264 13.0869 13.998 13.0986 14.6777ZM10.8574 18V15.5303H13.3271V18H10.8574Z"
+                fill="white" />
+            </svg>
+
+            </div>
+          </div>
+          <div class="card-info-sub-item card-info-sub-item2">
+          <div class="card-info-sub-item card-info-sub-item2-1">
+            <label for="exp-date">Expiry date</label><br />
+            <input type="text" id="" placeholder="MM / YY" name="exp-date" required />
+          </div>
+
+          <div class="card-info-sub-item card-info-sub-item2-2">
+            <label for="sec-code">Security code</label><br />
+            <div class="input-container">
+            <input type="text" id="" placeholder="CVV" name="sec-code" required /><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                fill="#5D616A" />
+              <path
+                d="M13.0986 14.6777H10.8574C10.8516 14.3555 10.8486 14.1592 10.8486 14.0889C10.8486 13.3623 10.9688 12.7646 11.209 12.2959C11.4492 11.8271 11.9297 11.2998 12.6504 10.7139C13.3711 10.1279 13.8018 9.74414 13.9424 9.5625C14.1592 9.27539 14.2676 8.95898 14.2676 8.61328C14.2676 8.13281 14.0742 7.72266 13.6875 7.38281C13.3066 7.03711 12.791 6.86426 12.1406 6.86426C11.5137 6.86426 10.9893 7.04297 10.5674 7.40039C10.1455 7.75781 9.85547 8.30273 9.69727 9.03516L7.42969 8.75391C7.49414 7.70508 7.93945 6.81445 8.76562 6.08203C9.59766 5.34961 10.6875 4.9834 12.0352 4.9834C13.4531 4.9834 14.5811 5.35547 15.4189 6.09961C16.2568 6.83789 16.6758 7.69922 16.6758 8.68359C16.6758 9.22852 16.5205 9.74414 16.21 10.2305C15.9053 10.7168 15.249 11.3789 14.2412 12.2168C13.7197 12.6504 13.3945 12.999 13.2656 13.2627C13.1426 13.5264 13.0869 13.998 13.0986 14.6777ZM10.8574 18V15.5303H13.3271V18H10.8574Z"
+                fill="white" />
+            </svg>
+
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- submit button -->
+       <div class="submit-button">
+      <input type="submit" id="buy-now" value="Buy Now" />
+      <!-- need help? -->
+      <p id="need-help">Need Help?</p>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -7,7 +7,7 @@ Using the `hyf-homework` repo. In the terminal run `git status`
 If there are changes that have not been committed, figure out what to do with those changes
 
 - Should they be committed to another branch?
-- Should they be committed to `main`?
+- ​Should they be committed to `main`?
 - Should they be discarded?
 
 When you have figured out what to do with the changes and fixed those. Write `git status` again. If it says `nothing to commit, working tree clean`. Then you are ready to create the branch for this weeks homework.
