@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-brand">Movie App</div>
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="timer-container">
+        <div class="movie-selection-timer">
+          <input
+            type="number"
+            id="selectionTime"
+            min="1"
+            max="60"
+            value="5"
+            placeholder="minutes"
+          />
+          <button id="startSelectionTimer">Start Selection Timer</button>
+          <span id="selectionTimerDisplay"></span>
+        </div>
+        <div class="page-time-timer">
+          <span>Time on page: </span>
+          <span id="pageTimeDisplay">00:00:00</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search and Sort Container -->
+    <div class="search-sort-container">
+      <div class="search-wrapper">
+        <label class="search-label" for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Search movies..." />
+      </div>
+      <div class="sort-container">
+        <label class="sort-label" for="movie-sort">Sort by:</label>
+        <select
+          class="sort-select"
+          id="movie-sort"
+          aria-label="Movie sorting options"
+        >
+          <option value="name">Name (Ascending)</option>
+          <option value="name-desc">Name (Descending)</option>
+          <option value="year">Year (Ascending)</option>
+          <option value="year-desc">Year (Descending)</option>
+          <option value="director">Director</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Divider between search/sort and movie list -->
+    <div class="content-divider"></div>
+
+    <!-- Main Content - Movie List -->
+    <div class="container">
+      <!-- Movie cards will be added here dynamically -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>Your best source for watching and downloading the latest movies</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: sharifima93@gmail.com</p>
+          <p>Phone: 91 81 65 12</p>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ali Sharifi. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
