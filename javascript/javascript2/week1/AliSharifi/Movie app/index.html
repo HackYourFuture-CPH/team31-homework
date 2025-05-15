@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="movie-card">
+        <img id="movie-poster" src="#" alt="Movie Poster" />
+        <div class="movie-info">
+          <h2 id="movie-title"></h2>
+          <p id="movie-description"></p>
+          <div class="movie-details">
+            <p><strong>Year:</strong> <span id="movie-year"></span></p>
+            <p><strong>Director:</strong> <span id="movie-director"></span></p>
+            <p><strong>Price:</strong> <span id="movie-price"></span></p>
+          </div>
+          <div class="actors">
+            <h3>Main Actors:</h3>
+            <ul id="movie-actors"></ul>
+          </div>
+
+          <!-- Rating Section -->
+          <div class="rating-section">
+            <h3>Rate this movie:</h3>
+            <div class="stars">
+              <i class="fas fa-star" data-rating="1"></i>
+              <i class="fas fa-star" data-rating="2"></i>
+              <i class="fas fa-star" data-rating="3"></i>
+              <i class="fas fa-star" data-rating="4"></i>
+              <i class="fas fa-star" data-rating="5"></i>
+            </div>
+            <p id="rating-display"></p>
+          </div>
+
+          <!-- Comments Section -->
+          <div class="comments-section">
+            <h3>Comments:</h3>
+            <form class="comment-form">
+              <textarea
+                id="comment-input"
+                placeholder="Write your comment here..."
+              ></textarea>
+              <button id="submit-comment">Submit Comment</button>
+            </div>
+            <div id="comments-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
