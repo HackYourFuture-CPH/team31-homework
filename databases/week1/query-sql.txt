@@ -1,0 +1,102 @@
+select count(*) from task;
++----------+
+| count(*) |
++----------+
+|       35 |
++----------+
+
+SELECT COUNT(*) AS tasks_without_due_date
+    -> FROM task
+    -> WHERE due_date IS NULL;
++------------------------+
+| tasks_without_due_date |
++------------------------+
+|                      8 |
++------------------------+
+
+
+SELECT * FROM task WHERE status_id = 3;
+
+
+SELECT count(*) FROM task WHERE status_id = 3;
++----------+
+| count(*) |
++----------+
+|       12 |
++----------+
+
+SELECT task.*
+    -> FROM task
+    -> JOIN status ON task.status_id = status.id
+    -> WHERE status.name = 'Done';
+
+
+
+ SELECT *
+    -> FROM task
+    -> WHERE status_id != 3;   
+
+
+  SELECT task.*
+    -> FROM task
+    -> JOIN status ON task.status_id = status.id
+    -> WHERE status.name != 'Done';
+
+SELECT *
+    -> FROM task
+    -> ORDER BY created DESC;
+
+SELECT *
+    -> FROM task
+    -> ORDER BY created DESC
+    -> LIMIT 1;
+
+
+ SELECT title, due_date
+    -> FROM task
+
+
+
+SELECT task.title, status.name AS status
+    -> FROM task
+    -> JOIN status ON task.status_id = status.id;
+
+
+
+
+ SELECT status.name AS status_name, COUNT(task.id) AS task_count
+    -> FROM status
+    -> LEFT JOIN task ON status.id = task.status_id
+    -> GROUP BY status.name
+---------------------------------------------------
+Task 7:
+mysql> mysql> SELECT title, due_date
+    -> FROM task
+    -> WHERE title LIKE '%database%' OR description LIKE '%database%';\
++---------------------------------------+---------------------+
+| title                                 | due_date            |
++---------------------------------------+---------------------+
+| Setup salary databases for accounting | 2017-12-05 00:19:08 |
+| Learn how databases work              | 2017-12-18 05:08:05 |
+| Make the databases perform better     | 2017-12-01 13:28:35 |
+| Backup databases to external disk     | 2017-12-23 14:21:01 |
+| Learn about NoSQL databases           | 2017-12-23 10:13:42 |
++---------------------------------------+---------------------+
+5 rows in set (0.00 sec)
+--------------------------------------------------
+Task 9:
+mysql> SELECT s.name AS status_name, COUNT(t.id) AS task_count
+    -> FROM status s
+    -> LEFT JOIN task t ON s.id = t.status_id
+    -> GROUP BY s.id, s.name;
++-------------+------------+
+| status_name | task_count |
++-------------+------------+
+| Not started |          8 |
+| In progress |         15 |
+| Done        |         12 |
++-------------+------------+
+3 rows in set (0.01 sec)
+
+
+    -> ORDER BY task_count DESC;

@@ -1,0 +1,140 @@
+-- 👇 Drop existing tables if they exist (helps reset the DB during development)
+DROP TABLE IF EXISTS Review;
+DROP TABLE IF EXISTS Reservation;
+DROP TABLE IF EXISTS Meal;
+
+-- 👇 Create the Meal table to store meal listings
+CREATE TABLE Meal (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    location VARCHAR(255),
+    meal_time DATETIME NOT NULL, -- when the meal will happen
+    max_reservations INT,
+    price DECIMAL(10, 2), -- price of the meal
+    created_date DATE DEFAULT CURRENT_DATE -- auto-set when the meal is created
+);
+
+-- 👇 Create Reservation table to track guest bookings
+CREATE TABLE Reservation (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    number_of_guests INT NOT NULL,
+    meal_id INT, -- links to a meal
+    created_date DATETIME DEFAULT CURRENT_DATE,
+    contact_phonenumber VARCHAR(20),
+    contact_name VARCHAR(100),
+    contact_email VARCHAR(100),
+    FOREIGN KEY (meal_id) REFERENCES Meal(id) ON DELETE CASCADE -- if meal is deleted, delete reservations too
+);
+
+-- 👇 Create Review table so users can leave feedback on meals
+CREATE TABLE Review (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    meal_id INT, -- which meal the review is about
+    stars INT CHECK (stars BETWEEN 1 AND 5),
+    created_date DATETIME DEFAULT CURRENT_DATE,
+    FOREIGN KEY (meal_id) REFERENCES Meal(id) ON DELETE CASCADE
+);
+
+-- 🌱 Insert sample meals to test the app
+INSERT INTO Meal (title, description, location, meal_time, max_reservations, price)
+VALUES 
+('Persian Night', 'Delicious Iranian food', 'Copenhagen', '2025-06-01 18:00:00', 10, 85.00),
+('Italian Pasta Party', 'Homemade pasta and wine', 'Aarhus', '2025-06-05 19:00:00', 8, 100.00),
+('Vegan Brunch', 'Healthy vegan dishes', 'Odense', '2025-06-10 12:00:00', 15, 70.00);
+
+-- 🌱 Insert sample reservations
+INSERT INTO Reservation (number_of_guests, meal_id, contact_phonenumber, contact_name, contact_email)
+VALUES
+(2, 1, '12345678', 'Ali Reza', 'ali@example.com'),
+(4, 2, '87654321', 'Sara Jensen', 'sara@example.com');
+
+-- 🌱 Insert sample reviews
+INSERT INTO Review (title, description, meal_id, stars)
+VALUES
+('Amazing Food!', 'I loved the Persian dishes', 1, 5),
+('Great atmosphere', 'Pasta was fresh and delicious', 2, 4),
+('Nice experience', 'Host was friendly and the place cozy', 1, 4);
+
+-- 🍽️ CRUD QUERIES FOR MEAL
+-- Get all meals in the system
+SELECT * FROM Meal;
+
+-- Add a new meal to the system
+INSERT INTO Meal (title, description, location, meal_time, max_reservations, price)
+VALUES ('Sushi Night', 'Fresh sushi from local chef', 'Copenhagen', '2025-07-01 19:00:00', 10, 120.00);
+
+-- Fetch a single meal by ID (e.g., meal with ID = 1)
+SELECT * FROM Meal WHERE id = 1;
+
+-- Update a meal by its ID
+UPDATE Meal SET title = 'Updated Persian Night' WHERE id = 1;
+
+-- Delete a meal from the system
+DELETE FROM Meal WHERE id = 1;
+
+-- 🧾 CRUD QUERIES FOR RESERVATION
+-- Get all reservations
+SELECT * FROM Reservation;
+
+-- Add a new reservation
+INSERT INTO Reservation (number_of_guests, meal_id, contact_phonenumber, contact_name, contact_email)
+VALUES (3, 2, '11112222', 'Jonas Schmidt', 'jonas@example.com');
+
+-- Get a reservation by ID
+SELECT * FROM Reservation WHERE id = 1;
+
+-- Update reservation info (e.g., number of guests)
+UPDATE Reservation SET number_of_guests = 5 WHERE id = 1;
+
+-- Cancel a reservation
+DELETE FROM Reservation WHERE id = 1;
+
+-- ⭐ CRUD QUERIES FOR REVIEW
+-- Get all reviews
+SELECT * FROM Review;
+
+-- Add a new review
+INSERT INTO Review (title, description, meal_id, stars)
+VALUES ('Excellent sushi', 'So fresh and tasty!', 4, 5);
+
+-- Get a review by ID
+SELECT * FROM Review WHERE id = 1;
+
+-- Update review (e.g., lower star rating)
+UPDATE Review SET stars = 3 WHERE id = 1;
+
+-- Delete a review
+DELETE FROM Review WHERE id = 1;
+
+-- 📊 FUNCTIONAL QUERIES FOR BUSINESS LOGIC
+-- Get meals under a specific price (e.g., less than 90)
+SELECT * FROM Meal WHERE price < 90;
+
+-- Get meals that still have spots available for reservation
+SELECT *
+FROM Meal m
+WHERE (SELECT COALESCE(SUM(number_of_guests), 0) FROM Reservation r WHERE r.meal_id = m.id) < m.max_reservations;
+
+-- Search for meals where title includes a phrase (e.g., "rød grød med")
+SELECT * FROM Meal WHERE title LIKE '%rød grød med%';
+
+-- Get meals created within a specific date range
+SELECT * FROM Meal WHERE created_date BETWEEN '2023-01-01' AND '2023-12-31';
+
+-- Get a limited number of meals (e.g., top 5)
+SELECT * FROM Meal LIMIT 5;
+
+-- Get meals that received good reviews (4 stars or more)
+SELECT m.*
+FROM Meal m
+JOIN Review r ON m.id = r.meal_id
+WHERE r.stars >= 4;
+
+-- Get all reservations for a specific meal, sorted by newest first
+SELECT * FROM Reservation WHERE meal_id = 2 ORDER BY created_date DESC;
+
+-- Sort all meals based on the average review score
+SELECT  m.id,  m.title,  m.description,  m.location,  m.meal_time,  m.max_reservations,  m.price,  m.created_date, AVG(r.stars) AS average_stars FROM Meal m LEFT JOIN Review r ON m.id = r.meal_id GROUP BY m.id, m.title, m.description, m.location, m.meal_time, m.max_reservations, m.price, m.created_date ORDER BY average_stars DESC;

@@ -1,0 +1,283 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 3.6;
+    color: whitesmoke;
+    background-color: #1A1A19;
+}
+
+.t-word {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 8vw;
+    z-index: 2 ;
+    font-weight: 700;
+    line-height: 0.6em;
+}
+
+.s-word {
+    font-size: 0.2em;
+    letter-spacing: 0.2em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: #1A1A19;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+hr {
+    position: relative;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.navbar__ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__list{
+    margin: 0 15px;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f11313;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+
+.avatar {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(255, 255, 255, 0.2) inset;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .skills {
+    background-color: #1A1A19;
+    color: whitesmoke;
+    margin: 30px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    width: 140px;
+    height: 140px;
+    transition: transform 0.3s, background-color 0.3s;
+    margin: 30px;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #1A1A19;
+}
+
+.skill i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skill:hover i {
+    color: #00bcd4;
+}
+
+.fab.fa-html5 {
+    color: #e34c26;
+}
+
+.fab.fa-css3-alt {
+    color: #1572b6;
+}
+
+.fab.fa-js {
+    color: #f7df1e;
+}
+
+.fab.fa-react {
+    color: #61dafb;
+}
+
+.fab.fa-git-alt {
+    color: #f1502f;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196f3;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #00bcd4;
+}
+
+#contact .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact .social-links a {
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#contact .social-links a:hover {
+    color: #00bcd4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    
+
+    .header h1 {
+        font-size: 4vw;
+    }
+
+    .header h2 {
+        font-size: 2.5vw;
+    }
+
+  
+
+    .header {
+        padding: 5vh 10px; 
+        text-align: center;
+    }
+
+    
+    .avatar {
+        height: 120px; 
+        width: 120px; 
+        margin: 0 auto; 
+        display: block;
+    }
+
+    
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    .t-word {
+        font-size: 6vw;
+        margin-top: 10px;
+    }
+
+    .s-word {
+        font-size: 0.3em;
+    }
+
+    .skills-icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    }
+
+    .skill i {
+        font-size: 30px;
+    }
+
+    .skill p {
+        font-size: 12px;
+    }
+
+    #contact .social-links a {
+        font-size: 16px;
+    }
+}
