@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Used Apple Airpods",
+    "price": "50",
+    "description": "Battery life is not great"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S20",
+    "price": "320",
+    "description": "Good condition, minor scratches on screen"
+  },
+  {
+    "id": 3,
+    "name": "Lenovo ThinkPad T480",
+    "price": "450",
+    "description": "Business laptop, excellent condition"
+  },
+  {
+    "id": 4,
+    "name": "Bose QuietComfort 35 II",
+    "price": "180",
+    "description": "Noise-cancelling headphones, like new"
+  },
+  {
+    "id": 5,
+    "name": "Nintendo Switch (2019 model)",
+    "price": "220",
+    "description": "Includes dock and one controller"
+  },
+  {
+    "id": 6,
+    "name": "Instant Pot Duo 7-in-1",
+    "price": "65",
+    "description": "Used 5 times, works perfectly"
+  },
+  {
+    "id": 7,
+    "name": "Canon EOS Rebel T7",
+    "price": "220",
+    "description": "DSLR camera with 18-55mm lens"
+  },
+  {
+    "id": 8,
+    "name": "Vitamix 5200 Blender",
+    "price": "250",
+    "description": "Professional-grade blender, 2 years old"
+  },
+  {
+    "id": 9,
+    "name": "Kindle Paperwhite (10th gen)",
+    "price": "80",
+    "description": "No scratches, comes with case"
+  },
+  {
+    "id": 10,
+    "name": "Dyson V8 Animal Vacuum",
+    "price": "200",
+    "description": "Good suction, includes attachments"
+  },
+  {
+    "id": 11,
+    "name": "Apple Watch Series 5",
+    "price": "160",
+    "description": "44mm GPS model, battery at 85% capacity"
+  },
+  {
+    "id": 12,
+    "name": "PlayStation 4 Pro 1TB",
+    "price": "240",
+    "description": "Includes one controller and charging cable"
+  },
+  {
+    "id": 13,
+    "name": "Yeti Rambler 20oz Tumbler",
+    "price": "25",
+    "description": "Stainless steel, keeps drinks cold for hours"
+  },
+  {
+    "id": 14,
+    "name": "Fitbit Charge 4",
+    "price": "70",
+    "description": "Fitness tracker with GPS, good condition"
+  },
+  {
+    "id": 15,
+    "name": "Roomba 675 Robot Vacuum",
+    "price": "150",
+    "description": "Works well, shows some wear"
+  },
+  {
+    "id": 16,
+    "name": "GoPro Hero 8 Black",
+    "price": "180",
+    "description": "Action camera with 3 mounts included"
+  },
+  {
+    "id": 17,
+    "name": "Sonos One (Gen 2)",
+    "price": "160",
+    "description": "Smart speaker with Alexa, like new"
+  },
+  {
+    "id": 18,
+    "name": "Breville Barista Express",
+    "price": "400",
+    "description": "Espresso machine, needs descaling"
+  },
+  {
+    "id": 19,
+    "name": "Patagonia Nano Puff Jacket",
+    "price": "90",
+    "description": "Men's medium, excellent condition"
+  },
+  {
+    "id": 20,
+    "name": "LEGO Millennium Falcon",
+    "price": "120",
+    "description": "Used set, 95% complete with instructions"
+  }
+]

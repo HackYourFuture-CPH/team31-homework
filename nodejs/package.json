@@ -1,0 +1,11 @@
+{
+  "name": "hyf-nodejs",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./week2/classwork/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

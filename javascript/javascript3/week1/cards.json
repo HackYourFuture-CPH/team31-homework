@@ -1,0 +1,210 @@
+[
+    {
+        "cardName": "Two of Hearts",
+        "cardUrl": "./cards/TwoH.webp"
+    },
+    {
+        "cardName": "Two of Diamonds",
+        "cardUrl": "./cards/TwoD.webp"
+    },
+    {
+        "cardName": "Two of Clubs",
+        "cardUrl": "./cards/TwoC.webp"
+    },
+    {
+        "cardName": "Two of Spades",
+        "cardUrl": "./cards/TwoS.webp"
+    },
+    {
+        "cardName": "Three of Hearts",
+        "cardUrl": "./cards/ThreeH.webp"
+    },
+    {
+        "cardName": "Three of Diamonds",
+        "cardUrl": "./cards/ThreeD.webp"
+    },
+    {
+        "cardName": "Three of Clubs",
+        "cardUrl": "./cards/ThreeC.webp"
+    },
+    {
+        "cardName": "Three of Spades",
+        "cardUrl": "./cards/ThreeS.webp"
+    },
+    {
+        "cardName": "Four of Hearts",
+        "cardUrl": "./cards/FourH.webp"
+    },
+    {
+        "cardName": "Four of Diamonds",
+        "cardUrl": "./cards/FourD.webp"
+    },
+    {
+        "cardName": "Four of Clubs",
+        "cardUrl": "./cards/FourC.webp"
+    },
+    {
+        "cardName": "Four of Spades",
+        "cardUrl": "./cards/FourS.webp"
+    },
+    {
+        "cardName": "Five of Hearts",
+        "cardUrl": "./cards/FiveH.webp"
+    },
+    {
+        "cardName": "Five of Diamonds",
+        "cardUrl": "./cards/FiveD.webp"
+    },
+    {
+        "cardName": "Five of Clubs",
+        "cardUrl": "./cards/FiveC.webp"
+    },
+    {
+        "cardName": "Five of Spades",
+        "cardUrl": "./cards/FiveS.webp"
+    },
+    {
+        "cardName": "Six of Hearts",
+        "cardUrl": "./cards/SixH.webp"
+    },
+    {
+        "cardName": "Six of Diamonds",
+        "cardUrl": "./cards/SixD.webp"
+    },
+    {
+        "cardName": "Six of Clubs",
+        "cardUrl": "./cards/SixC.webp"
+    },
+    {
+        "cardName": "Six of Spades",
+        "cardUrl": "./cards/SixS.webp"
+    },
+    {
+        "cardName": "Seven of Hearts",
+        "cardUrl": "./cards/SevenH.webp"
+    },
+    {
+        "cardName": "Seven of Diamonds",
+        "cardUrl": "./cards/SevenD.webp"
+    },
+    {
+        "cardName": "Seven of Clubs",
+        "cardUrl": "./cards/SevenC.webp"
+    },
+    {
+        "cardName": "Seven of Spades",
+        "cardUrl": "./cards/SevenS.webp"
+    },
+    {
+        "cardName": "Eight of Hearts",
+        "cardUrl": "./cards/EightH.webp"
+    },
+    {
+        "cardName": "Eight of Diamonds",
+        "cardUrl": "./cards/EightD.webp"
+    },
+    {
+        "cardName": "Eight of Clubs",
+        "cardUrl": "./cards/EightC.webp"
+    },
+    {
+        "cardName": "Eight of Spades",
+        "cardUrl": "./cards/EightS.webp"
+    },
+    {
+        "cardName": "Nine of Hearts",
+        "cardUrl": "./cards/NineH.webp"
+    },
+    {
+        "cardName": "Nine of Diamonds",
+        "cardUrl": "./cards/NineD.webp"
+    },
+    {
+        "cardName": "Nine of Clubs",
+        "cardUrl": "./cards/NineC.webp"
+    },
+    {
+        "cardName": "Nine of Spades",
+        "cardUrl": "./cards/NineS.webp"
+    },
+    {
+        "cardName": "Ten of Hearts",
+        "cardUrl": "./cards/TenH.webp"
+    },
+    {
+        "cardName": "Ten of Diamonds",
+        "cardUrl": "./cards/TenD.webp"
+    },
+    {
+        "cardName": "Ten of Clubs",
+        "cardUrl": "./cards/TenC.webp"
+    },
+    {
+        "cardName": "Ten of Spades",
+        "cardUrl": "./cards/TenS.webp"
+    },
+    {
+        "cardName": "Jack of Hearts",
+        "cardUrl": "./cards/JackH.webp"
+    },
+    {
+        "cardName": "Jack of Diamonds",
+        "cardUrl": "./cards/JackD.webp"
+    },
+    {
+        "cardName": "Jack of Clubs",
+        "cardUrl": "./cards/JackC.webp"
+    },
+    {
+        "cardName": "Jack of Spades",
+        "cardUrl": "./cards/JackS.webp"
+    },
+    {
+        "cardName": "Queen of Hearts",
+        "cardUrl": "./cards/QueenH.webp"
+    },
+    {
+        "cardName": "Queen of Diamonds",
+        "cardUrl": "./cards/QueenD.webp"
+    },
+    {
+        "cardName": "Queen of Clubs",
+        "cardUrl": "./cards/QueenC.webp"
+    },
+    {
+        "cardName": "Queen of Spades",
+        "cardUrl": "./cards/QueenS.webp"
+    },
+    {
+        "cardName": "King of Hearts",
+        "cardUrl": "./cards/KingH.webp"
+    },
+    {
+        "cardName": "King of Diamonds",
+        "cardUrl": "./cards/KingD.webp"
+    },
+    {
+        "cardName": "King of Clubs",
+        "cardUrl": "./cards/KingC.webp"
+    },
+    {
+        "cardName": "King of Spades",
+        "cardUrl": "./cards/KingS.webp"
+    },
+    {
+        "cardName": "Ace of Hearts",
+        "cardUrl": "./cards/AceH.webp"
+    },
+    {
+        "cardName": "Ace of Diamonds",
+        "cardUrl": "./cards/AceD.webp"
+    },
+    {
+        "cardName": "Ace of Clubs",
+        "cardUrl": "./cards/AceC.webp"
+    },
+    {
+        "cardName": "Ace of Spades",
+        "cardUrl": "./cards/AceS.webp"
+    }
+]
