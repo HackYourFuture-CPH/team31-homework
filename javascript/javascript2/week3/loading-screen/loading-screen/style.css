@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: greenyellow;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loading_bar {
+  border: 4px solid greenyellow;
+  width: 600px;
+  height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 6px;
+  padding: 6px;
+}
+
+.loading_step {
+  flex-grow: 1;
+  height: 100%;
+  background-color: greenyellow;
+  opacity: 0;
+}

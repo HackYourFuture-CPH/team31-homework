@@ -1,0 +1,28 @@
+.image {
+  width: 250px;
+  border-radius: 8px;
+  display: block;
+  margin: 16px auto;
+}
+
+.myBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyBtn {
+  background: teal;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.deleteButton {
+  background: red;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin-left: 5px;
+}

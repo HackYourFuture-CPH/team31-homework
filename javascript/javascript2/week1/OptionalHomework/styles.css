@@ -1,0 +1,8 @@
+.spirit-animal {
+  display: flex;
+  justify-content: center;
+}
+
+#newAnimal {
+  padding: 10px 25%;
+}

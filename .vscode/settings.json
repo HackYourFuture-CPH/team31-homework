@@ -1,0 +1,29 @@
+{
+  "cSpell.words": [
+    "Amet",
+    "Bruv",
+    "buttonsvg",
+    "Codewars",
+    "grød",
+    "hawt",
+    "maffs",
+    "mousaka",
+    "røde",
+    "totalnow",
+    "totalpermonth",
+    "Vadim"
+  ],
+  "editor.formatOnSave": true,
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.port": 5501,
+  "eslint.validate": ["json", "javascript", "typescript", "html"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.format.enable": true
+}
