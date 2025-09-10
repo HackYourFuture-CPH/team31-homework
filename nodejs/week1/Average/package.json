@@ -1,0 +1,11 @@
+{
+  "name": "average",
+  "version": "1.0.0",
+  "main": "avg.js",
+  "type": "module",
+  "author": "WASIM",
+  "description": "Homework Practice average function",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

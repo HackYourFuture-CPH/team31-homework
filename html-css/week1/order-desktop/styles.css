@@ -1,0 +1,254 @@
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #eb8259 30%, #FE4E9B 70%);
+    width: 100%;
+    max-width: 850px;
+    color: white;
+    border-radius: 5px;
+    }
+
+header h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.total-order-details {
+    padding: 0 10px 0 10px;
+
+}
+
+.total-order-per-month, .total-order-now {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+
+.total-order-per-month {
+    color: rgb(236, 225, 225);
+    font-size: 16px;
+}
+
+.line {
+    border-top: 1px solid white;
+    padding: 0 11px 0 11x;
+}
+
+.total-order-now {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    max-width: 850px;
+}
+
+.payment-option-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;   
+    margin-top: 0px;
+}
+
+.payment-method-section h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.payment-method-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.payment-method-buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-width: 125px;
+    height: 120px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #939393;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 8px 8px #aca1a13d;
+    padding: 20px 0;
+}
+
+.payment-method-buttons button:hover {
+    cursor: pointer;
+    border: 2px solid #d64282; ;
+}
+
+.payment-method-buttons button:active {
+    cursor: auto;    
+    transition: all .1s ease;
+    transform: scale(1.04); 
+    
+}
+
+.cards-img {
+    width: 120px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.paypal-img {
+    width: 45px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.card-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-information h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-information-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #939393;
+    line-height: 1.5rem;
+}   
+
+.card-information-form label {
+    font-size: 15px ;
+    font-weight: bold;
+}
+
+.card-information-form-top input {
+    width: 100%;
+    min-width: 90x;
+    height: 35px;
+    border:#939393 1px solid;
+    border-radius: 5px;
+    background: #f3f0f0;
+}
+
+.card-information-form-bottom input {
+    width: 100%;
+    min-width: 90x;
+    height: 35px;
+    border:#939393 1px solid;
+    border-radius: 5px;
+    background: #f3f0f0;
+}
+
+.card-information-form input::placeholder {
+    Font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}   
+
+.card-information-form-top {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+
+.card-information-form-bottom {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px
+}
+
+.finish-buying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finish-buying button {
+    margin-top: 30px;
+    align-items: center;
+    width: 35%;
+    height: 50px;
+    min-width: max-content;
+    background: linear-gradient(90deg, #eb8259 30%, #FE4E9B 70%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+}
+
+.finish-buying button:hover {
+    cursor: pointer;
+    border: 2px solid #d64282;
+}
+
+.finish-buying button:active {
+    transform: scale(0.95);
+    transition: all .5s ease;
+    background: linear-gradient(92.74deg, #FE4E9B 1.15%, #da6f3e 98.48%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d64282;
+}
+
+/* Media Queries */
+
+@media (min-width: 765px) {
+    .card-information-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }   
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Order Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+<header>
+        <h2>Order Summary</h2>
+        <div class="total-order-details">
+            <div class="total-order-per-month">
+                <p>Total</p>
+                <p>$333 / month</p>
+            </div>
+            <div class="line">
+            </div>
+            <div class="total-order-now">
+                <p>Total</p>
+                <p>$100</p>
+            </div>
+        </div>
+</header>   
+<main> 
+    <section class="payment-method-section">
+        <h2>Payment Method</h2>
+        <div class="payment-method-buttons">
+            <button>
+            <img class="cards-img" src="card.png" alt="credit cards image" />
+            <p>Credit / Debit</p>
+            </button>
+            <button>
+            <img class="paypal-img" src="papal.webp" alt="paypal image" />
+            <p>Paypal</p>
+            </button>
+        </div>
+    </section>
+    <section class="card-information">
+        <h2>Card Info</h2>
+        <form class="card-information-form" method="post">
+            <div class="card-information-form-top">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" maxlength="14" name="card-number" placeholder="5555333322226666" autocomplete="" required />
+            </div>
+            <div class="card-information-form-bottom">
+                <div class="card-information-form-bottom-left">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" autocomplete="" placeholder="MM/YY" required />
+                </div>
+                <div class="card-information-form-bottom-right">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" maxlength="3" name="cvv" placeholder="123" required />
+                </div>
+            </div>
+        </form>
+    </section>
+        <section class="finish-buying">
+        <button class="buy-now" type="submit" value="Buy-now">Buy Now</button>
+    </section>
+<footer>
+    <p>Need Help?</p>
+</footer>
+</main>
+</body>
+</html></html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Used Apple Airpods",
+    "price": "50",
+    "description": "Battery life is not great"
+  },
+  {
+    "id": 2,
+    "type": "doc",
+    "value": "hello world"
+  },
+  {
+    "id": 3,
+    "name": "Gaming Mouse",
+    "price": "30",
+    "description": "Slightly used, works perfectly"
+  },
+  {
+    "id": 4,
+    "type": "doc",
+    "value": "JSON data sample"
+  },
+  {
+    "id": 5,
+    "name": "Bluetooth Speaker",
+    "price": "45",
+    "description": "Excellent condition, rich bass"
+  },
+  {
+    "id": 6,
+    "type": "doc",
+    "value": "technical documentation"
+  },
+  {
+    "id": 7,
+    "name": "Old Laptop",
+    "price": "150",
+    "description": "Slower performance, good for basic tasks"
+  },
+  {
+    "id": 8,
+    "type": "doc",
+    "value": "meeting notes"
+  },
+  {
+    "id": 9,
+    "name": "Smartwatch",
+    "price": "70",
+    "description": "Scratched screen, fully functional"
+  },
+  {
+    "id": 10,
+    "type": "doc",
+    "value": "project plan draft"
+  },
+  {
+    "id": 11,
+    "type": "pdf",
+    "value": "project plan final draft"
+  }
+]

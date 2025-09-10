@@ -1,0 +1,20 @@
+{
+  "name": "exercises_week2",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "WASIM",
+  "license": "ISC",
+  "description": "FOR WEEK 2 EXERCISES",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "mysql2": "^3.14.1"
+  }
+}

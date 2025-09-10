@@ -1,0 +1,3 @@
+Color 1 BLUE
+Color 2 RED
+Color 3 Purple
