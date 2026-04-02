@@ -1,0 +1,3 @@
+[build]
+  base = "javascript/javascript2/week1/Javascript2Project"
+  publish = "."

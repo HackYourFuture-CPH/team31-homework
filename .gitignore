@@ -1,0 +1,7 @@
+node_modules/
+styles.scss
+styles.min.css
+.prettierrc
+eslint.config.mjs
+.env
+.next

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./files/css/styles.css">
+        <title>Order Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="order">
+            <div class="order__summary">
+                <h1>Order Summary</h1>
+            </div>
+            <div class="order__totalpermonth">
+                <p>Total</p>
+                <p>$333 / month</p>
+            </div>
+            <div class="order__totalnow">
+                <p>Total</p>
+                <p>$100</p>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Payment Method -->
+            <section class="payment">
+                <h2 class="payment__method">Payment Method</h2>
+                <div class="payment__option">
+                    <input type="radio" name="select" id="option-1" class="payment__radio payment__radio1" checked />
+                    <input type="radio" name="select" id="option-2" class="payment__radio payment__radio2" />
+                    <label for="option-1" class="option option-1">
+                        <img class="payment__img1" src="./files/images/cards.webp" alt="Pay with Credit or Debit Cards" />
+                        <span>Credit / Debit</span>
+                    </label>
+                    <label for="option-2" class="option option-2">
+                        <img class="payment__img2" src="./files/images/paypal.webp" alt="Pay with Paypal" />
+                        <span>PayPal</span>
+                    </label>
+                </div>
+            </section>
+        
+            <!-- Card Data Input -->
+            <form class="card">
+                <h2 class="card__info">Card Info</h2>
+                <section class="card__input">
+                    <div class="card__data">
+                        <label for="card__number" class="card__text">Card number</label>
+                        <input class="card__number" name="card__number" id="card__number" type="text" pattern="\s*(\S\s*){16,}"
+                            maxlength="19" placeholder="1234 1234 1234 1234" required>
+                    </div>
+                    <div class="card__safety">
+                        <div class="card__expiry">
+                            <label for="card__date" class="card__text">Expiry date</p></label>
+                            <input class="card__date" name="card__date" id="card__date" type="text" pattern="\s*(\S\s*){5,}"
+                                maxlength="8" placeholder="MM / YY" required>
+                        </div>
+                        <div class="card__sec">
+                            <label for="card__security" class="card__text">Security code</p></label>
+                            <input class="card__security" name="card__security" id="card__security" type="text"
+                                pattern="\s*(\S\s*){3,}" maxlength="3" placeholder="CVV" required>
+                        </div>
+                    </div>
+                </section>
+                <button class="primary-button" type="submit">Buy Now</button>
+            </form>
+        </main>
+
+        <!-- Help Anchor -->
+        <footer class="help">
+                <a href="#" class="help__link">Need Help?</a>
+        </footer>
+        
+        <script>
+                //function to format card data
+            function formatCardNumber(value) {
+                //Only Numbers
+                const numericValue = value.replace(/\D/g, ''); 
+                //Only 4 digits
+                return numericValue.match(/.{1,4}/g)?.join(' ') || numericValue;
+            }
+
+                //Card input field setup
+            function setupCardNumberInput(inputId) {
+                const input = document.querySelector(inputId);
+
+                input.addEventListener('input', (e) => {
+                
+                //Saving cursor position
+                const cursorPosition = e.target.selectionStart;
+                const previousValueLength = e.target.value.length;
+
+                //Format the input
+                const formattedValue = formatCardNumber(e.target.value);
+                e.target.value = formattedValue;
+
+                //Adjust the cursor
+                const adjustment = formattedValue.length - previousValueLength;
+                e.target.selectionStart = e.target.selectionEnd = cursorPosition + adjustment;
+                });
+            }
+
+                //Execute
+                document.addEventListener('DOMContentLoaded', () => {
+                setupCardNumberInput('#card__number');
+            });
+
+                //Function for the Expiry Date
+            function setupExpiryDateInput(inputId) {
+                const input = document.querySelector(inputId);
+                //Input is only numbers
+                input.addEventListener('input', (e) => {
+                    let value = e.target.value.replace(/\D/g, '');
+
+                //Checks if month is <=12
+                    if (value.length >= 2) {
+                        const month = parseInt(value.slice(0, 2), 10);
+                        if (month > 12) {
+                            value = '12' + value.slice(2);
+                        }
+                    }
+
+                    //Add space after month
+                    if (value.length >= 2) {
+                        value = value.slice(0, 2) + ' / ' + value.slice(2, 4);
+                    }
+
+                    e.target.value = value;
+                });
+            }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    setupExpiryDateInput('#card__date');
+                });
+
+                //Cvv only numbers
+            function setupCvvInput(inputSelector) {
+                const input = document.querySelector(inputSelector);
+
+                input.addEventListener('input', (e) => {
+                    const value = e.target.value.replace(/\D/g, ''); 
+                    e.target.value = value;
+                });
+            }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    setupCardNumberInput('#card__security');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+cucumbers
+tomatoes
+brussels sprouts
+spinach
+carrots
+onions
+bell pepper
+beetroot

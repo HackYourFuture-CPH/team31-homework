@@ -1,0 +1,98 @@
+const restaurants = [
+  {
+    name: "Burger Haven",
+    address: "123 Burger Lane, Foodtown",
+    type: "burger",
+    rating: 4.2,
+  },
+  {
+    name: "Sushi World",
+    address: "456 Sushi St, Roll City",
+    type: "sushi",
+    rating: 3.8,
+  },
+  {
+    name: "Pizza Paradise",
+    address: "789 Cheese Blvd, Slice City",
+    type: "pizza",
+    rating: 4.0,
+  },
+  {
+    name: "Pasta Palace",
+    address: "321 Noodle Ave, Spaghetti Town",
+    type: "italian",
+    rating: 4.6,
+  },
+  {
+    name: "Taco Time",
+    address: "654 Taco Way, Salsa City",
+    type: "mexican",
+    rating: 3.5,
+  },
+  {
+    name: "Vegan Delight",
+    address: "987 Green St, Plant City",
+    type: "vegan",
+    rating: 4.7,
+  },
+  {
+    name: "Steakhouse Supreme",
+    address: "159 Meat St, Grill Town",
+    type: "steakhouse",
+    rating: 4.9,
+  },
+  {
+    name: "Sushi Express",
+    address: "753 Fish Rd, Roll City",
+    type: "sushi",
+    rating: 3.9,
+  },
+  {
+    name: "Italian Bistro",
+    address: "852 Pasta St, Spaghetti Town",
+    type: "italian",
+    rating: 4.4,
+  },
+  {
+    name: "Pizza Corner",
+    address: "951 Pepperoni Pl, Slice City",
+    type: "pizza",
+    rating: 3.7,
+  },
+  {
+    name: "Taco Fiesta",
+    address: "246 Salsa St, Salsa City",
+    type: "mexican",
+    rating: 4.5,
+  },
+  {
+    name: "Vegan Bistro",
+    address: "369 Greenway, Plant City",
+    type: "vegan",
+    rating: 4.1,
+  },
+  {
+    name: "BBQ Barn",
+    address: "753 Smoke Rd, Grill City",
+    type: "steakhouse",
+    rating: 4.2,
+  },
+  {
+    name: "Dessert Oasis",
+    address: "852 Sweet Tooth St, Sugar City",
+    type: "dessert",
+    rating: 4.9,
+  },
+  {
+    name: "Burger Joint",
+    address: "159 Patty Pl, Foodtown",
+    type: "burger",
+    rating: 3.6,
+  },
+  {
+    name: "Taco Shack",
+    address: "159 Taco Rd, Salsa City",
+    type: "mexican",
+    rating: 3.8,
+  },
+];
